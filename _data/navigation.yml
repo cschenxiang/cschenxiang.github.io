@@ -1,0 +1,22 @@
+# main links links
+main:
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Honors & Awards"
+    url: /honors/  
+
+  - title: "Talks"
+    url: /talks/      
+    
+  - title: "Professional Services"
+    url: /services/
+
+  - title: "Students"
+    url: /students/
+
+  - title: "Teaching"
+    url: /teaching/  
+    
+  - title: "CV"
+    url: /resume/  
