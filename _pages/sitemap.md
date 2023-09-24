@@ -9,6 +9,6 @@ author_profile: true
 
 <ul>
 <div id="clustrmaps-widget" style="width:60%">
-    <script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=FF2zR4KR625rREtKSURq3BrUAQIoHTFUm_j1pf6EAtU"></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=m12kWnQlN6dBvanN5PAc-qdmio7k3X_sM9-CqgiDDUc'></script>
 </div>
 </ul>
