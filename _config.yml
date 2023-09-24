@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=vjqtXegAAAAJ&hl=en"
-  email            :  chenxiang@njust.edu.cn
+  email            :  "chenxiang@njust.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
