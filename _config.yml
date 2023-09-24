@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Xiang Chen / Homepage"
 title_separator          : "-"
 name                     : &name "Xiang Chen"
-description              : &description "Ph.D. candidate at Nanjing University of Science and Technology"
+description              : &description "Ph.D. candidate at NJUST"
 url                      : https://cschenxiang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "cschenxiang.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Xiang Chen / 陈翔"
   avatar           : "cx.jpg"
-  bio              : "Ph.D. candidate at Nanjing University of Science and Technology"
+  bio              : "Ph.D. candidate at NJUST"
   location         : "200, Xiaolingwei Road,<br>    Nanjing, Jiangsu, China"
   employer         :
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "xw-hu"
+  github           : "cschenxiang"
   google_plus      :
   keybase          :
   instagram        :
