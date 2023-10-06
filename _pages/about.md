@@ -19,6 +19,7 @@ If you want to cooperate with me, kindly contact me via email. Looking for new f
 
 News 
 ====== 
+[10/2023] We release a research website:  http://www.deraining.tech/. <br>
 [07/2023] Selected for the Excellent Ph.D. Students Sponsorship Program of NJUST. <br>
 [02/2023] One paper is accepted by CVPR 2023. <br>
 [11/2022] One paper is accepted by AAAI 2023. <br>
