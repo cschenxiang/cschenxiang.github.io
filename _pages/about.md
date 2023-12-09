@@ -19,6 +19,7 @@ If you want to cooperate with me, kindly contact me via email. Looking for new f
 
 News 
 ====== 
+[12/2023] One co-author paper is accepted by AAAI 2024. Congrats to Hongming. <br>
 [11/2023] Selected for the Outstanding Master's Thesis Incentive Program of CSA. <br>
 [10/2023] We release a research website:  http://www.deraining.tech/. <br>
 [07/2023] Selected for the Excellent Ph.D. Students Sponsorship Program of NJUST. <br>
