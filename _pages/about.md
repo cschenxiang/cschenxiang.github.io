@@ -20,11 +20,8 @@ If you want to cooperate with me, kindly contact me via email. Looking for new f
 News 
 ====== 
 [12/2023] One co-author paper is accepted by AAAI 2024. Congrats to Hongming. <br>
-[11/2023] Selected for the Outstanding Master's Thesis Incentive Program of CSA. <br>
 [10/2023] We release a research website:  http://www.deraining.tech/. <br>
-[07/2023] Selected for the Excellent Ph.D. Students Sponsorship Program of NJUST. <br>
 [02/2023] One paper is accepted by CVPR 2023. <br>
 [11/2022] One paper is accepted by AAAI 2023. <br>
-[08/2022] Achieved Huawei Terminal Camera Academic Star Award. <br>
 [08/2022] One paper is accepted by ECCV 2022. <br>
 [03/2022] One paper is accepted by CVPR 2022. <br>
