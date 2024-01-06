@@ -12,8 +12,8 @@ main:
   - title: "Talks & Presentations"
     url: /talks/      
     
-  - title: "Collaborators & Teams"
-    url: /teams/
+    #- title: "CollaboratorsTeams"
+    #  url: /teams/
 
   # - title: "Teaching"
   #   url: /teaching/  
