@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html><head>
+<title>Xiang Chen</title>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+<style type="text/css">
+ @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+
+	body
+	{
+	font-family:"Roboto",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:300;
+    	background-color : #CDCDCD;
+	}
+    	.content
+	{
+    		width : 900px;
+    		padding : 25px 30px;
+    		margin : 25px auto;
+    		background-color : #fff;
+    		box-shadow: 0px 0px 10px #999;
+    		border-radius: 15px; 
+	}	
+	table
+	{
+		padding: 5px;
+	}
+	
+	table.pub_table,td.pub_td1,td.pub_td2
+	{
+		padding: 8px;
+		width: 850px;
+        border-collapse: separate;
+        border-spacing: 15px;
+        margin-top: -5px;
+	}
+
+	td.pub_td1
+	{
+		width:50px;
+	}
+    td.pub_td1 img
+    {
+        height:120px;
+        width: 160px;
+    }
+	
+	div#container
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 820px;
+		text-align: left;
+		position: relative;
+		background-color: #FFF;
+	}
+	div#DocInfo
+	{
+		color: #1367a7;
+		height: 158px;
+	}
+	h4,h3,h2,h1
+	{
+		color: #3B3B3B;
+	}
+	h2
+	{
+		font-size:130%;
+	}
+	p
+	{
+		color: #5B5B5B;
+		margin-bottom: 50px;
+	}
+	p.caption
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 600px;
+	}
+	p.caption2
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 800px;
+	}
+	#header_img
+	{
+		position: absolute;
+		top: 0px; right: 0px;
+    }
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+
+    #mit_logo {
+        position: absolute;
+        left: 646px;
+        top: 14px;
+        width: 200px;
+        height: 20px;
+    }
+   
+    table.pub_table tr {
+        outline: thin dotted #666666;
+    }
+    .papericon {
+        border-radius: 8px; 
+        -moz-box-shadow: 3px 3px 6px #888;
+        -webkit-box-shadow: 3px 3px 6px #888;
+        box-shadow: 3px 3px 6px #888;
+        width: 180px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+    }
+
+     .papericon_blank {
+
+        width: 160px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+    }
+
+    .media {
+	outline: thin dotted #666666;
+ 	margin-bottom: 15px;	
+	margin-left:10px;
+    }
+    .media-body {
+	margin-top:5px;
+	padding-left:20px;
+    }
+
+.papers-selected h5, .papers-selected h4 { display : none; }
+.papers-selected .publication { display : none; }
+.paperhi-only { display : none; }
+.papers-selected .paperhi { display : flex; }
+.papers-selected .paperlo { display : none; }
+
+.hidden>div {
+	display:none;
+}
+
+.visible>div {
+	display:block;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23931362-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23931362-2');
+</script>
+
+<script type="text/javascript">
+    var myPix = new Array("img/cx.jpg")
+    function choosePic() {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        document.getElementById("myPicture").src = myPix[randomNum];
+    };
+</script>
+
+<script>
+$(document).ready(function() {
+  $('.paperlo button').click(function() {
+     $('.papers-container').addClass('papers-selected');
+  });
+  $('.paperhi button').click(function() {
+     $('.papers-container').removeClass('papers-selected');
+  });
+
+
+	$('.text_container').addClass("hidden");
+
+	$('.text_container').click(function() {
+		var $this = $(this);
+
+		if ($this.hasClass("hidden")) {
+			$(this).removeClass("hidden").addClass("visible");
+			$(this).removeClass("papericon");
+		} else {
+			$(this).removeClass("visible").addClass("hidden");
+		}
+	});
+
+
+});
+</script>
+
+</head>
+
+
+<body>
+<div class="content">
+<!--	< id="container">-->
+
+	<table>
+	<tbody><tr>
+	<td><img id="myPicture" src="xxx" style="float:left; padding-right:20px" height="200px"></td>
+	<script>choosePic();</script>
+	<td>
+	<div id="DocInfo">
+		<h1>Xiang Chen (陈翔)</h1>
+        Ph.D. Candidate<br>
+        School of Computer Science and Engineering, Nanjing University of Science and Technology <br>
+        Email: chenxiang@njust.edu.cn <br>
+        <a href="https://scholar.google.com/citations?user=vjqtXegAAAAJ&hl=en" target="_blank" rel="external">Google Scholar</a> &bull; <a href="https://github.com/cschenxiang" target="_blank" rel="external">Github</a>  &bull; <a href="https://orcid.org/0000-0002-8966-8159" target="_blank" rel="external">ORCID</a>  &bull; <a href="https://dblp.org/pid/64/3062-15.html" target="_blank" rel="external">DBLP</a>  <br>
+	</div><br>
+	</td>
+	</tr>
+	</tbody></table>
+	<br>
+
+	<h2><b>About Me</b></h2>
+        <div style="text-align:justify";>
+    	&emsp; 	Hi there 😄! I'm Hao Tang, a final-year Ph.D. Candidate at Nanjing University of Science and Technology in <a href="https://imag-njust.net" target="_blank" rel="external">Intelligent Media Analysis Group (IMAG)</a>, supervised by Prof. <a href="https://scholar.google.com/citations?user=ByBLlEwAAAAJ&hl=en&oi=ao" target="_blank" rel="external">Jinhui Tang</a> and co-supervised by Prof. <a href="https://scholar.google.com/citations?user=L6J2V3sAAAAJ&hl=zh-CN" target="_blank" rel="external">Zechao Li</a>.
+			Before that, I received my B.Sc. degree from Harbin Engineering University in June 2018.
+			Currently, I'm a visiting Ph.D. student at Singapore Management University in the <a href="http://www.shengfenghe.com/group/" target="_blank" rel="external">Visual Understanding and Generation (VUG)</a> laboratory, working closely with Prof. <a href="https://scholar.google.com/citations?user=rBWnK8wAAAAJ&hl=en" target="_blank" rel="external">Shengfeng He</a>.
+			Previously, I held a similar position at Singapore University of Technology and Design in the <a href="https://people.sutd.edu.sg/~jun_liu/" target="_blank" rel="external">Computer Vision & Learning Group (VLG)</a>, working closely with Prof. <a href="https://scholar.google.com/citations?user=Q5Ild8UAAAAJ&hl=zh-CN" target="_blank" rel="external">Jun Liu</a>.
+			My primary research interests mainly focus on data-efficient Learning and its applications in Computer Vision and Multimedia. The ultimate goal of my research is to develop machines that can learn from <span style="font-weight: bold; color: purple;">Limited, Dynamic, and Imperfect</span> data in real-world scenes like humans.
+		<span style="color: red; font-weight: bold;"><em>I'm always interested in meeting new people and hearing about potential collaborations. If you'd like to work together or get in contact with me, please email me!</em></span> 😊
+	</div>
+		<p>
+	<h2><b>Recent News</b></h2>
+<!--		<h2><span style="color:red;font-size:27px"><strong>NEWS!</strong></span></h2>-->
+    <ul style="height: 200px;overflow-y: auto">
+		<div style="text-align: justify; display: block; margin-right: auto;">
+		<li><img src="img/new.gif"> <strong style="color:red">Seeking a Postdoc position starting from Summer 2024. Contact me for interest in my expertise.</strong></li>
+			<li>2024/01: One paper has been newly selected as <strong>ESI Hot Paper</strong> (<font size="-1"><strong style="color:purple"><i>Top 0.1% of papers in the academic field</i></strong></font>).</li>
+		<li>2023/12: One paper has been accepted by <strong>Information Fusion</strong> (JCR Q1, IF=18.60).</li>
+		<li>2023/12: One paper has been accepted by <strong>AAAI 2024</strong>.</li>
+		<li>2023/11: One paper has been accepted by <strong>IEEE TCSVT</strong> (JCR Q1, IF=8.40).</li>
+		<li>2023/11: Two paper has been newly selected as <strong>ESI Highly Cited Paper</strong> (<font size="-1"><strong style="color:purple"><i>Top 1% of papers in the academic field</i></strong></font>).</li>
+		<li>2023/08: One paper has been accepted by <strong>IEEE TNNLS</strong> (JCR Q1, IF=14.26).</li>
+		<li>2023/07: One paper has been accepted by <strong>ACM Multimedia 2023</strong>.</li>
+		<li>2023/01: One paper has been accepted by <strong>IEEE TNNLS</strong> (JCR Q1, IF=14.26).</li>
+		<li>2023/01: One paper has been accepted by <strong>IEEE TCSVT</strong> (JCR Q1, IF=8.40).</li>
+<!--		<li>2022/05: One paper has been accepted by <strong>Pattern Recognition</strong> (JCR Q1, IF=8.00).</li>-->
+<!--		<li>2021/08: One paper accepted by <strong>IJCAI 2021 LTDL Workshop </strong> was awarded as the <a href="BestPaper.pdf" target="_blank" rel="external" style="color:red"><strong><u>Best Paper</u></strong></a>.</li>-->
+<!--		<li>2021/08: We won the <a href="BestPaper.pdf" target="_blank" rel="external" style="color:red"><strong><u>Best Paper Award</u></strong></a> of the LTDL Workshop in IJCAI 2021.</li>-->
+<!--    	<li>2021/07: Our team has been granted the <a href="./img/Silver%20Award.jpg" target="_blank" rel="external" style="color:red"><strong><u>Silver Award</u></strong></a> of <strong>ICIG 2021 Challenge</strong>.<br>-->
+<!--			<font size="-1"><img src="./img/award.jpg" style="height: 20px;"><strong style="color:purple"><i>Workshop: Few-Shot Learning-Based High-speed Railway Catenary Image Detection and Analysis</i></strong></font></li>-->
+<!--    	<li>2021/07: I was selected for the <strong>Excellent Ph.D. Students Sponsorship Program by NJUST</strong>.</li>-->
+<!--   		<li>2021/06: One paper has been accepted by <strong>IJCAI 2021 LTDL Workshop</strong>.</li>-->
+<!--		<li>2020/08: One paper has been accepted by <strong>ACM Multimedia 2020</strong>.</li>-->
+			</div>
+    </ul>
+	<p>
+
+<!--<sup>&#x2709</sup>-->
+<div class="papers-container papers-selected">
+	<h5 class="paperlo"><b>All Publications</b><button type="button" class="ml-3 btn btn-light"> Show selected</button></h5>
+	<h5 class="paperhi paperhi-only"><b>Selected Publications</b><button type="button" class="ml-3 btn btn-light"> Show all</button></h5>
+
+
+	<h5 class="pt-2 pb-1">2024</h5>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="https://arxiv.org/abs/2309.08912" target="_blank" rel="external"><strong style="color:darkblue">Delving into Multimodal Prompting for Fine-grained Visual Classification</strong></a><br>
+			   Xin Jiang<sup>#</sup>, <strong><b>Hao Tang</b></strong><sup>#</sup>, Junyao Gao, Xiaoyu Du, Shengfeng He, and Zechao Li (# equal contribution) <br>
+           AAAI Conference on Artificial Intelligence 2024 <br>
+	</div></div>
+
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="" target="_blank" rel="external"><strong style="color:darkblue">Divide-and-Conquer: Confluent Triple-Flow Network for RGB-T Salient Object Detection</strong></a><br>
+			   <strong><b>Hao Tang</b></strong>, Zechao Li, Dong Zhang, Shengfeng He, and Jinhui Tang <br>
+           Under Review, 2024 [<a href="https://github.com/CSer-Tang-hao/ConTriNet_RGBT-SOD">Code</a>]<br>
+	</div></div>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="" target="_blank" rel="external"><strong style="color:darkblue">基于视觉Transformer的细粒度图像双视图识别</strong></a><br>
+			   <strong><b>唐昊</b></strong>, 李泽超, 蒋鑫, 唐金辉 <br>
+           在审, 2024 <br>
+	</div></div>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="https://arxiv.org/abs/2311.06056" target="_blank" rel="external"><strong style="color:darkblue">Learning Contrastive Self-Distillation for Ultra-Fine-Grained Visual Categorization Targeting Limited Samples</strong></a><br>
+			   Ziye Fang, Xin Jiang, <strong><b>Hao Tang</b></strong>, and Zechao Li <br>
+           Under Review, 2024 <br>
+	</div></div>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="" target="_blank" rel="external"><strong style="color:darkblue">Global Meets Local: Dual Activation Hashing Network for Large-Scale Fine-Grained Image Retrieval</strong></a><br>
+			   Xin Jiang, <strong><b>Hao Tang</b></strong>, and Zechao Li <br>
+           Under Review, 2024 <br>
+	</div></div>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="https://arxiv.org/abs/2210.10495" target="_blank" rel="external"><strong style="color:darkblue">ADPS: Asymmetric Distillation Post-Segmentation for Image Anomaly Detection</strong></a><br>
+			   Peng Xing, <strong><b>Hao Tang</b></strong>, Jinhui Tang, and Zechao Li <br>
+           Under Review, 2024 <br>
+	</div></div>
+
+	<h5 class="pt-2 pb-1">2023</h5>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612221" target="_blank" rel="external"><strong style="color:darkblue">M<sup>3</sup>Net: Multi-view Encoding, Matching, and Fusion for Few-shot Fine-grained Action Recognition</strong></a><br>
+			   <strong><b>Hao Tang</b></strong>, Jun Liu, Shuanglin Yan, Rui Yan, Zechao Li, and Jinhui Tang <br>
+           ACM Multimedia 2023 <br>
+	</div></div>
+
+	<div class="publication media paperhi">
+           <div class="media-body">
+			   <a href="https://ieeexplore.ieee.org/document/10038499" target="_blank" rel="external"><strong style="color:darkblue">Knowledge-Guided Semantic Transfer Network for Few-Shot Image Recognition</strong></a><br>
+			   Zechao Li, <strong><b>Hao Tang</b></strong>, Zhimao Peng, Guo-jun Qi, and Jinhui Tang <br>
+           IEEE Transactions on Neural Networks and Learning Systems [<a href="https://github.com/CSer-Tang-hao/FS-KTN">Code</a>]
+			   <img src="./img/award.jpg" style="height: 18px;"> <font size="-1"><strong style="color:red"><i>ESI Hot Paper & ESI Highly Cited Paper</i></strong></font>
+
+	</div></div>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="https://arxiv.org/abs/2208.14365" target="_blank" rel="external"><strong style="color:darkblue">Image-Specific Information Suppression and Implicit Local Alignment for Text-based Person Search</strong></a><br>
+			   Shuanglin Yan, <strong><b>Hao Tang</b></strong>, Liyan Zhang, and Jinhui Tang <br>
+           IEEE Transactions on Neural Networks and Learning Systems [<a href="https://github.com/shuanglinyan">Code</a>]<br>
+	</div></div>
+
+	<div class="publication media paperhi">
+           <div class="media-body">
+			   <a href="https://ieeexplore.ieee.org/document/10018260" target="_blank" rel="external"><strong style="color:darkblue">Boosting Few-shot Fine-grained Recognition with Background Suppression and Foreground Alignment</strong></a><br>
+			   Zican Zha, <strong><b>Hao Tang</b></strong>, Yunlian Sun, and Jinhui Tang <br>
+           IEEE Transactions on Circuits and Systems for Video Technology [<a href="https://github.com/CSer-Tang-hao/BSFA-FSFG">Code</a>]
+			   <img src="./img/award.jpg" style="height: 18px;"> <font size="-1"><strong style="color:red"><i>ESI Highly Cited Paper</i></strong></font>
+	</div></div>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="https://arxiv.org/abs/2307.07187" target="_blank" rel="external"><strong style="color:darkblue">Erasing, Transforming, and Noising Defense Network for Occluded Person Re-Identification</strong></a><br>
+			   Neng Dong, Liyan Zhang, Shuanglin Yan, <strong><b>Hao Tang</b></strong>, and Jinhui Tang <br>
+           IEEE Transactions on Circuits and Systems for Video Technology [<a href="https://github.com/nengdong96/ETNDNet">Code</a>]<br>
+	</div></div>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="https://arxiv.org/abs/2311.03828" target="_blank" rel="external"><strong style="color:darkblue">Multi-view Information Integration and Propagation for Occluded Person Re-identification</strong></a><br>
+			   Neng Dong, Shuanglin Yan, <strong><b>Hao Tang</b></strong>, Jinhui Tang, and Liyan Zhang <br>
+           Information Fusion [<a href="https://github.com/nengdong96/MVIIRNet">Code</a>]<br>
+	</div></div>
+
+	<h5 class="pt-2 pb-1">2022</h5>
+
+	<div class="publication media paperhi">
+           <div class="media-body">
+			   <a href="https://www.sciencedirect.com/science/article/pii/S0031320322002734" target="_blank" rel="external"><strong style="color:darkblue">Learning Attention-Guided Pyramidal Features for Few-shot Fine-grained Recognition</strong></a><br>
+			   <strong><b>Hao Tang</b></strong>, Chengcheng Yuan, Zechao Li, and Jinhui Tang <br>
+			   Pattern Recognition [<a href="https://github.com/CSer-Tang-hao/AGPF-FSFG">Code</a>]
+			   <img src="./img/award.jpg" style="height: 18px;"> <font size="-1"><strong style="color:#ff0000"><i>IJCAI LTDL Workshop 2021 Best Paper Award & ESI Highly Cited Paper</i></strong></font>
+	</div></div>
+
+	<h5 class="pt-2 pb-1">2021</h5>
+
+	<div class="publication media">
+           <div class="media-body">
+			   <a href="https://ieeexplore.ieee.org/abstract/document/9506685" target="_blank" rel="external"><strong style="color:darkblue">Coupled Patch Similarity Network For One-Shot Fine-Grained Image Recognition</strong></a><br>
+           Sheng Tian, <strong><b>Hao Tang</b></strong>, and Longquan Dai <br>
+           IEEE ICIP 2021 [<a href="https://github.com/CSer-Tang-hao/CPSN-OSFG">Code</a>]<br>
+	</div></div>
+
+	<div class="publication media">
+           <div class="media-body">
+			    <a href="https://ieeexplore.ieee.org/abstract/document/9428187" target="_blank" rel="external"><strong style="color:darkblue">Learning a Tree-Structured Channel-Wise Refinement Network for Efficient Image Deraining</strong></a><br>
+           Di Wang<sup>#</sup>, <strong><b>Hao Tang</b></strong><sup>#</sup>, Jinshan Pan, and Jinhui Tang (# equal contribution)<br>
+           IEEE ICME 2021 [<a href="https://github.com/CSer-Tang-hao/TCRN-Deraining">Code</a>]<br>
+	</div></div>
+
+	<h5 class="pt-2 pb-1">2020</h5>
+
+	<div class="publication media paperhi">
+           <div class="media-body">
+			   <a href="https://dl.acm.org/doi/abs/10.1145/3394171.3413884" target="_blank" rel="external"><strong style="color:darkblue">BlockMix: Meta Regularization and Self-Calibrated Inference for Metric-Based Meta-Learning</strong></a><br>
+			   <strong><b>Hao Tang</b></strong>, Zechao Li, Zhimao Peng, and Jinhui Tang <br>
+           ACM Multimedia 2020 <font size="-1"><strong style="color:red"><i>Oral Presentation</i></strong></font><br>
+	</div></div>
+
+
+</div>
+<p>
+
+	<h2><b>Honors & Awards</b></h2>
+<div>
+	<ul>
+		<li>Silver Award at FSL-Based High-speed Railway Catenary Image Detection and Analysis Workshop, ICIG 2021</li>
+		<li>Best Paper Award at Long-Tailed Distribution Learning Workshop, IJCAI 2021</li>
+		<li>Excellent Ph.D. Students Sponsorship Program of NJUST, 2021~2023</li>
+		<li>First Prize Scholarship of Nanjing University of Science and Technology, 2018~2022</li>
+		<li>Excellent Bachelor Thesis & Excellent Graduate at HEU, 2018</li>
+		<li>First-class Innovation Scholarship, Ministry of Industry and Information Technology of China, 2017</li>
+	</ul>
+</div>
+<!--<p>-->
+	<h2><b>Professional Services</b></h2>
+<div>
+	<ul>
+		<li>
+			<b>Journal Reviewer</b>: </br>
+			&emsp; • IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI) </br>
+			&emsp; • IEEE Transactions on Image Processing (T-IP) </br>
+			&emsp; • IEEE Transactions on Neural Networks and Learning Systems (T-NNLS) </br>
+			&emsp; • IEEE Transactions on Multimedia (T-MM) </br>
+			&emsp; • IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT) </br>
+			&emsp; • IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM) </br>
+			&emsp; • IEEE Transactions on Emerging Topics in Computational Intelligence (T-ETCI) </br>
+<!--			&emsp; • IEEE Signal Processing Letters (SPL) </br>-->
+			&emsp; • IEEE Internet of Things Journal (IOT) </br>
+			&emsp; • International Journal of Computer Vision (IJCV) </br>
+<!--			&emsp; • International Journal of Intelligent Systems (IJIS) </br>-->
+			&emsp; • Pattern Recognition (PR) </br>
+			&emsp; • Knowledge-Based Systems (KBS) </br>
+			&emsp; • Information Sciences (IS) </br>
+<!--			&emsp; • The Visual Computer (TVC) </br>-->
+<!--			&emsp; • Image and Vision Computing (IVC) </br>-->
+<!--			&emsp; • Multimedia Tools and Applications (MTA) </br>-->
+		</li>
+
+		<li>
+			<b>Conference Reviewer / Program Committee Member</b>: </br>
+			&emsp; • Association for the Advancement of Artificial Intelligence (AAAI): 2021-2024 </br>
+			&emsp; • ACM International Conference on Multimedia (ACM MM): 2021-2024 </br>
+			&emsp; • International Joint  Conference on Artificial Intelligence (IJCAI): 2024 </br>
+		</li>
+	</ul>
+</div>
+
+
+	</div>
+<!--	</div>-->
+
+</body>
+ </html>
