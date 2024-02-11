@@ -1,22 +1,22 @@
 # main links links
 main:
+  - title: "About Me"
+    url: "/#about-me"
+
+  - title: "Research Interests"
+    url: "/#r-interests"
+
   - title: "Selected Publications"
-    url: /publications/
+    url: "/#pub"
 
-  - title: "Honors & Awards"
-    url: /honors/  
+  - title: "Honors and Awards"
+    url: "/#ha"
 
-  - title: "Professional Services"
-    url: /services/
+  - title: "Teaching"
+    url: "/#teach"
 
-  - title: "Talks & Presentations"
-    url: /talks/      
-    
-    #- title: "CollaboratorsTeams"
-    #  url: /teams/
+  - title: "Team"
+    url: "/#team"
 
-  # - title: "Teaching"
-  #   url: /teaching/  
-    
-  # - title: "CV"
-  #   url: /resume/  
+  - title: "Academic Service"
+    url: "/#Service"
