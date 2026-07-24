@@ -95,7 +95,7 @@
       research.id = "research";
       research.innerHTML =
         "<h2>Research Interests</h2>" +
-        "<p>My research focuses on low-level computer vision, with an emphasis on image restoration, adverse-weather vision, image and video enhancement, and foundation models for visual restoration.</p>";
+        "<p>My research focuses on low-level computer vision, including visual enhancement, visual reconstruction and visual generation.</p>";
       biographyText.after(research);
       const recruitment = main.querySelector(".infoblock");
       if (recruitment) research.after(recruitment);
