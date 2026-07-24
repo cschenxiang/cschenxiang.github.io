@@ -256,8 +256,6 @@ table.imgtable td {
   text-align: left;
 }
 
-table.imgtable td:first-child { display: none; }
-
 .pub_title {
   margin: 0 0 2px !important;
   color: var(--ink);
@@ -368,6 +366,7 @@ table.imgtable td:first-child { display: none; }
   white-space: nowrap;
   overflow-wrap: normal;
 }
+
 
 
 
