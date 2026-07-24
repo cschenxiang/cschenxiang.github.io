@@ -1,0 +1,381 @@
+﻿:root {
+  --purple: #6b2e96;
+  --purple-dark: #562174;
+  --purple-soft: #f2e8f7;
+  --ink: #494e52;
+  --muted: #6f777d;
+  --line: #f0edf2;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--purple-dark);
+  text-decoration: underline;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 54px;
+  border-bottom: 1px solid #f2f3f3;
+  background: rgba(255, 255, 255, 0.97);
+}
+
+.nav-inner {
+  width: min(1280px, calc(100% - 110px));
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 7.5px;
+}
+
+.site-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.site-nav a {
+  padding: 7.5px 0;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  white-space: nowrap;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.site-nav a.active { font-weight: 700; }
+
+.page-shell {
+  width: min(1280px, calc(100% - 110px));
+  margin: 14.5px auto 60px;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 15.25375% minmax(0, 1fr);
+  gap: 1.69625%;
+  align-items: start;
+}
+
+.profile {
+  position: sticky;
+  top: 68.5px;
+  padding-top: 21.5px;
+}
+
+.profile-card {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 175px;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 0;
+}
+
+.profile h1 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.2px;
+  text-align: center;
+}
+
+.profile-meta,
+.profile-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-meta li,
+.profile-links li {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 7px;
+  margin: 0 0 7.5px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.profile-meta li:first-child {
+  display: block;
+  text-align: center;
+}
+
+.profile-meta i,
+.profile-links i {
+  margin-top: 4px;
+  color: var(--purple);
+  text-align: center;
+}
+
+.profile-links { margin-top: 2px; }
+.profile-links a { color: var(--ink); }
+.profile-links a:hover { color: var(--purple); }
+
+.profile-meta li,
+.profile-links li,
+.profile-meta a,
+.profile-links a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.main-content {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.intro-kicker { display: none; }
+
+.main-content h2 {
+  margin: 30px 0 15px;
+  padding: 0 0 7px;
+  border-bottom: 1px solid var(--line);
+  color: var(--purple);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.2px;
+}
+
+.main-content h2:first-of-type { margin-top: 0; }
+.main-content h2 i { display: none; }
+
+.main-content p {
+  margin: 0 0 7.5px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.main-content ul {
+  margin: 0 0 15px;
+  padding-left: 21px;
+}
+
+.main-content li {
+  margin: 0 0 5px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.research-block { margin-top: 30px; }
+
+.infoblock {
+  margin: 18px 0 30px;
+}
+
+.infoblock .blockcontent {
+  padding: 14px 16px;
+  border: 0;
+  border-left: 3px solid var(--purple);
+  border-radius: 0;
+  background: #faf7fc;
+}
+
+.infoblock font { color: inherit !important; }
+
+.infoblock p:first-child {
+  color: var(--purple-dark);
+  font-weight: 700;
+}
+
+.news-list {
+  max-height: 160px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0 0 0 21px !important;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+}
+
+table,
+table.imgtable {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.imgtable tr {
+  display: block;
+  margin: 0 0 19px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+table.imgtable td {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  text-align: left;
+}
+
+table.imgtable td:first-child { display: none; }
+
+.pub_title {
+  margin: 0 0 2px !important;
+  color: var(--ink);
+  font-size: 15px !important;
+  font-weight: 700;
+  line-height: 22.5px !important;
+}
+
+.pub_author {
+  margin: 0 !important;
+  color: var(--ink);
+  font-size: 15px !important;
+  line-height: 22.5px !important;
+}
+
+.pub_author a {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--purple);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.section-note {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.main-content > font > ul {
+  padding-left: 21px;
+  border: 0;
+  background: transparent;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 200;
+  padding: 7px 10px;
+  color: #fff;
+  background: var(--purple);
+  transform: translateY(-150%);
+}
+
+.skip-link:focus { transform: translateY(0); }
+
+@media (min-width: 801px) and (max-width: 1100px) {
+  .site-nav {
+    gap: 10px;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-inner {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 14px;
+  }
+
+  .site-nav {
+    min-width: max-content;
+    gap: 28px;
+  }
+
+  .page-shell {
+    width: min(100% - 28px, 720px);
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 26px;
+  }
+
+  .profile {
+    position: static;
+    max-width: 205px;
+    padding-top: 0;
+  }
+}
+
+@media print {
+  .site-header { display: none; }
+
+  .page-shell {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  .profile {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+.profile-meta a[href^="mailto:"] {
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
